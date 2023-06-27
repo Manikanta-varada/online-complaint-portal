@@ -1,0 +1,23 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.4kK9wbCl_EsSXPzWaNBQiQHaEy?pid=ImgDet&w=800&h=517&rs=1');
+    background-size: cover;
+
+}
+.btnstyle {
+    background-color:#89BD9E;
+    color:#3C153B;
+    padding:20px;
+    border-radius: 8px;
+    border:none;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+.student {
+    margin-top:23%; 
+    color: #A0A0A0;
+}
