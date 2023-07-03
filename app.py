@@ -14,7 +14,7 @@ db=os.environ.get('RDS_DB_NAME')
 password=os.environ.get('RDS_PASSWORD')
 host=os.environ.get('RDS_HOSTNAME')
 port=os.environ.get('RDS_PORT')
-with mysql.connector.connect(host-host,password-password,port-port,db-db) as conn:
+with mysql.connector.connect(host=host,password=password,port=port,db=db) as conn:
     cursor=conn.cursor(buffered=True)
     cursor.execute("create table if not exists users(username varchar(50) primary key,password varchar(15),email varchar(60))")
     cursor.execute("create table if not exists notes(nid int not null auto_increment primary key,title tinytext,content text,date timestamp defaulcreate table if not exists(nid int not null auto_increment primary key,title tinytext,content text,date timestamp default now() on update now(),added_by varchar(50),foreign key(added_by) references users(username));")
